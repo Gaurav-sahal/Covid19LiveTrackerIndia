@@ -1,0 +1,320 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+
+.covid19-container{
+/*	border: 12px solid white;
+*/	color: white;
+	/*width: 100vh;*/
+	position: absolute;
+	top: 5%;
+	left: 27vw;
+}
+
+.covid19-container h1{
+	font-size: 40px;
+	margin-bottom: 5%;
+	border-bottom: 5px solid white;
+	padding: 15px 0;
+	/*width: 100%;*/
+	text-align: center;
+}
+
+.indexCountry{
+	text-align: center;
+}
+
+.indexUpdatedTime{
+	margin-left: 10px;
+}
+
+.upper_detail {
+	/*display: flex;
+	text-align: center; 
+	margin: 13px 30px 20px 0; */
+	margin: 3px 30px;
+}
+
+.upper_detail .up{
+	width: 100%;
+	margin: 10px 15px;
+/*	border: 5px solid white;
+*/	display: flex;
+}
+
+.upper_detail .up p{
+	display: block;
+	padding: 3px 22px;
+	border-radius: 10px;
+	margin: 5px 10px;
+}
+
+.indexTotalCases{
+	background: orange;
+}
+
+.indexRecovered{
+	background: green;
+}
+
+.upper_detail .down{
+	width: 100%;
+	margin: 10px 15px;
+/*	border: 5px solid white;
+*/	display: flex;
+}
+
+.upper_detail .down p{
+	display: block;
+	padding: 3px 22px;
+	border-radius: 10px;
+	margin: 5px 10px;
+
+}
+
+.indexActiveCases{
+	background: blue;
+}
+
+.indexDeaths{
+	background: red;
+}
+
+.middle_detail {
+	/*display: flex;
+	text-align: center; */
+	margin: 3px 30px;
+}
+
+.indexState{
+	text-align: center;
+}
+
+.middle_detail .up{
+	width: 100%;
+	margin: 10px 15px;
+/*	border: 5px solid white;
+*/	display: flex;
+}
+
+.middle_detail .up p{
+	display: block;
+	padding: 3px 22px;
+	border-radius: 10px;
+	margin: 5px 10px;
+}
+
+.indexStateTotalCases{
+	background: orange;
+}
+
+.indexStateRecovered{
+	background: green;
+}
+
+.middle_detail .down{
+	width: 100%;
+	margin: 10px 15px;
+/*	border: 5px solid white;
+*/	display: flex;
+}
+
+.middle_detail .down p{
+	display: block;
+	padding: 3px 22px;
+	border-radius: 10px;
+	margin: 5px 10px;
+
+}
+
+.indexStateTotalInfected{
+	background: blue;
+}
+
+.indexStateDeceased{
+	background: red;
+}
+
+p {
+	font-size: 22px;
+	margin: 0;
+	font-weight: bold;
+	color: white;
+}
+
+h1 {
+	color: white;
+}
+
+#particles-js {
+	background-color: black;
+	height: 100vh;
+	width: 100%;
+	background-size: cover;
+	background-position: center;
+}
+
+.indexUpdatedTime{
+	font-size: 15px;
+	font-family: Courier New;
+	color: white;
+}
+
+.indexDropDown{
+	width: 100%;
+	margin: 2px 23px;
+}
+
+.indexDropDown label{
+
+	font-size: 20px;
+	color: white;
+}
+
+.indexDropDown select{
+	background: none;
+	width: 40%;
+	font-size: 18px;
+	margin: 12px 0;
+	padding: 6px;
+	border: 1px solid white;
+	border-radius: 8px;
+	outline: none;
+	color: white;
+}
+
+.indexDropDown select option{
+	color: black;
+}
+
+.indexBtn{
+	color: white;
+	cursor: pointer;
+	outline: none;
+/*	width: 25%;
+*/	margin: 12px 0 0 5px;
+	padding: 6px;
+	border: 2px solid white;
+	border-radius: 8px;
+	background: none;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.indexBtn:hover{
+	opacity: 0.9;
+	color: black;
+	background: white;
+}
+
+.indexBtn:active {
+    background-color: orange;
+    /*box-shadow: 0 5px gray;*/
+    transform: translateY(2px);
+ }
+
+.DistrictSearch{
+	width: 100%;
+	margin: 10px 0;
+	text-align: center;
+}
+
+.DistrictSearch input{
+	background: none;
+	width: 40%;
+	font-size: 18px;
+	margin: 12px 0;
+	padding: 6px;
+	border: none;
+	border-bottom: 2px solid white;
+	border-radius: 8px;
+	outline: none;
+	color: white;
+}
+
+.indexSearchBtn{
+	color: white;
+	cursor: pointer;
+	outline: none;
+/*	width: 25%;
+*/	margin: 12px 0 0 5px;
+	padding: 6px;
+	border: 2px solid white;
+	border-radius: 8px;
+	background: none;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.indexSearchBtn:hover{
+	opacity: 0.9;
+	color: black;
+	background: white;
+}
+
+.indexSearchBtn:active {
+    background-color: orange;
+    /*box-shadow: 0 5px gray;*/
+    transform: translateY(2px);
+ }
+
+.lower_detail {
+	/*display: flex;
+	text-align: center; */
+	margin: 3px 30px;
+}
+
+.indexDistrict{
+	text-align: center;
+}
+
+.lower_detail .up{
+	width: 100%;
+	margin: 10px 15px;
+/*	border: 5px solid white;
+*/	display: flex;
+}
+
+.lower_detail .up p{
+	display: block;
+	padding: 3px 22px;
+	border-radius: 10px;
+	margin: 5px 10px;
+}
+
+.indexDistrictConfirmed{
+	background: orange;
+}
+
+.indexDistrictRecovered{
+	background: green;
+}
+
+.lower_detail .down{
+	width: 100%;
+	margin: 10px 15px;
+/*	border: 5px solid white;
+*/	display: flex;
+}
+
+.lower_detail .down p{
+	display: block;
+	padding: 3px 22px;
+	border-radius: 10px;
+	margin: 5px 10px;
+
+}
+
+.indexDistrictActive{
+	background: blue;
+}
+
+.indexDistrictDeceased{
+	background: red;
+}
+
+.indexDistrictErrorCase{
+	text-align: center;
+}
