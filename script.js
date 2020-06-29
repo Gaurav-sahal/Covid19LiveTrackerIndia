@@ -68,6 +68,29 @@ function searchRegion() {
 	    	}
 		}		
 	);
+
+	let dropdown = $('#indexDistrict');
+
+	dropdown.empty();
+
+	dropdown.append('<option selected="true" disabled>Choose a District</option>');
+	dropdown.prop('selectedIndex', 0);
+
+	const url = 'https://api.covid19india.org/state_district_wise.json';
+
+	// Populate dropdown with list of districts
+	$.getJSON(url, function (data) {
+	  $.each(data[scriptState].districtData, function (key) {
+	     dropdown.append($('<option></option>').attr('value', key).text(key));
+	    // if(key == scriptState){
+	    	console.log("District "+key);
+	    //	console.log("This is entry"+entry);
+	    // }
+	    // else{
+	    // 	console.log("Region not found!");
+	    // }
+	  })
+	});
 }
 
 function searchDistrict(){
@@ -79,11 +102,12 @@ function searchDistrict(){
 	$(".indexDistrictDeceased").empty();
 	$(".indexDistrictErrorCase").empty();
 
+	var scriptDistrict = document.getElementById("indexDistrict").value;
 
 	$.getJSON("https://api.covid19india.org/state_district_wise.json",
 		function(data){
 
-			var scriptDistrict = document.getElementById("indexDistrict").value;
+			// var scriptDistrict = document.getElementById("indexDistrict").value;
 			if(data[scriptState].districtData[scriptDistrict]){
 
 				document.getElementById("lower_detail").style.visibility="visible";
@@ -110,6 +134,8 @@ function searchDistrict(){
 		
 		}
 	);
+
+	
 
 }
 
