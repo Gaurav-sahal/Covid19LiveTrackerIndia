@@ -1,141 +1,32 @@
+/*---------------------------RESET-------------------------------*/
 *{
 	margin: 0;
 	padding: 0;
 }
 
+/*-----------------------------------MAIN PAGE BACKGROUND--------------------------*/
 
-.covid19-container{
-/*	border: 12px solid white;
-*/	color: white;
-	/*width: 100vh;*/
-	position: absolute;
-	top: 5%;
-	left: 27vw;
+html { 
+  max-width: 2000px;
+  width: 100%;
+  min-height: 1450px;
+  height: auto;
+  background: url(img12.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
-.covid19-container h1{
-	font-size: 40px;
-	margin-bottom: 5%;
-	border-bottom: 5px solid white;
-	padding: 15px 0;
-	/*width: 100%;*/
-	text-align: center;
+body{
+	font: 16px Helmet, Freesans, sans-serif;
 }
 
-.indexCountry{
-	text-align: center;
-}
-
-.indexUpdatedTime{
-	margin-left: 10px;
-}
-
-.upper_detail {
-	/*display: flex;
-	text-align: center; 
-	margin: 13px 30px 20px 0; */
-	margin: 3px 30px;
-}
-
-.upper_detail .up{
-	width: 100%;
-	margin: 10px 15px;
-/*	border: 5px solid white;
-*/	display: flex;
-}
-
-.upper_detail .up p{
-	display: block;
-	padding: 3px 22px;
-	border-radius: 10px;
-	margin: 5px 10px;
-}
-
-.indexTotalCases{
-	background: orange;
-}
-
-.indexRecovered{
-	background: green;
-}
-
-.upper_detail .down{
-	width: 100%;
-	margin: 10px 15px;
-/*	border: 5px solid white;
-*/	display: flex;
-}
-
-.upper_detail .down p{
-	display: block;
-	padding: 3px 22px;
-	border-radius: 10px;
-	margin: 5px 10px;
-
-}
-
-.indexActiveCases{
-	background: blue;
-}
-
-.indexDeaths{
-	background: red;
-}
-
-.middle_detail {
-	/*display: flex;
-	text-align: center; */
-	margin: 3px 30px;
-}
-
-.indexState{
-	text-align: center;
-}
-
-.middle_detail .up{
-	width: 100%;
-	margin: 10px 15px;
-/*	border: 5px solid white;
-*/	display: flex;
-}
-
-.middle_detail .up p{
-	display: block;
-	padding: 3px 22px;
-	border-radius: 10px;
-	margin: 5px 10px;
-}
-
-.indexStateTotalCases{
-	background: orange;
-}
-
-.indexStateRecovered{
-	background: green;
-}
-
-.middle_detail .down{
-	width: 100%;
-	margin: 10px 15px;
-/*	border: 5px solid white;
-*/	display: flex;
-}
-
-.middle_detail .down p{
-	display: block;
-	padding: 3px 22px;
-	border-radius: 10px;
-	margin: 5px 10px;
-
-}
-
-.indexStateTotalInfected{
-	background: blue;
-}
-
-.indexStateDeceased{
-	background: red;
-}
+/*h1{
+	font-size: 3em;
+	line-height: 1em;
+	margin-bottom: .5em;
+}*/
 
 p {
 	font-size: 22px;
@@ -149,36 +40,138 @@ h1 {
 }
 
 #particles-js {
-	background-color: black;
-	height: 100vh;
+	/*background-color: black;*/
+	position: absolute;
+	min-height: 1450px;
+	height: 100%;
+	max-width: 2000px;
 	width: 100%;
 	background-size: cover;
 	background-position: center;
 }
 
+/*-------------------------------------------------MAIN CONTAINER-------------------------------------------------*/
+.covid19-container{
+	/*border: 10px solid white;*/
+	color: white;
+	max-width: 880px;
+	width: 100%;
+/*	height: 100%;*/
+	/*margin: 0 auto;*/
+	position: absolute;
+	left: 21%;
+  	/*margin-left: -10px;*/
+	/*left: 27%;
+  	margin-left: -67px;*/
+	/*top: 10px;
+	left: 27%;
+	padding-bottom: 100px;*/
+}
+
+.covid19-container h1{
+	font-size: 3em;
+	margin-bottom: 5%;
+	border-bottom: 5px solid white;
+	padding: 15px 0;
+	/*width: 100%;*/
+	text-align: center;
+}
+
+.indexCountry{
+	font-size: 1.75em;
+	text-align: center;
+}
+
+/*-------------------------------------UPPER DETAIL------------------------------*/
+
+.upper_detail {
+	/*display: flex;
+	text-align: center; 
+	margin: 13px 30px 20px 0; */
+	/*margin: 5px 0 10px 50px;*/
+	border: 5px solid white;
+	position: relative;
+	width: 100%;
+	margin: 5% auto;
+}
+
+.upper_detail .up{
+	width: 90%;
+	margin: 2% auto;
+	/*border: 3px solid white;*/
+	display: flex;
+}
+
+.upper_detail .up p{
+	display: block;
+	font-size: 1.50em;
+	padding: 3px 22px;
+	border-radius: 10px;
+	margin: 3% 5%;
+}
+
+.indexTotalCases{
+	background: orange;
+	/*padding: 3px;*/
+}
+
+.indexRecovered{
+	background: green;
+}
+
+.upper_detail .down{
+	width: 90%;
+	margin: 2% auto;
+	/*border: 3px solid white;*/
+	display: flex;
+}
+
+.upper_detail .down p{
+	display: block;
+	font-size: 1.50em;
+	padding: 3px 22px;
+	border-radius: 10px;
+	margin: 3% 5%;
+}
+
+.indexActiveCases{
+	background: blue;
+}
+
+.indexDeaths{
+	background: red;
+}
+
+/*-------------------------------------DROP DOWN------------------------------------*/
+
 .indexUpdatedTime{
-	font-size: 15px;
+	font-size: 1em;
 	font-family: Courier New;
 	color: white;
+	text-align: center;
+	position: relative;
 }
 
 .indexDropDown{
+	border: 5px solid white;
 	width: 100%;
-	margin: 2px 23px;
+	margin: 5% auto;
+	position: relative;
+	/*margin: 2px 23px;*/
 }
 
 .indexDropDown label{
-
-	font-size: 20px;
+	padding: 0 3% 0 5%;
+	font-size: 1.50em;
 	color: white;
 }
 
 .indexDropDown select{
 	background: none;
 	width: 40%;
-	font-size: 18px;
+	font-size: 1.4em;
 	margin: 12px 0;
-	padding: 6px;
+	padding: 1.15%;
 	border-bottom: 2px solid white;
 	border-radius: 8px;
 	outline: none;
@@ -194,8 +187,8 @@ h1 {
 	cursor: pointer;
 	outline: none;
 /*	width: 25%;
-*/	margin: 12px 0 0 5px;
-	padding: 6px;
+*/	margin: 0 0 0 5%;
+	padding: 1.15%;
 	border: 2px solid white;
 	border-radius: 8px;
 	background: none;
@@ -211,23 +204,88 @@ h1 {
 
 .indexBtn:active {
     background-color: orange;
-    /*box-shadow: 0 5px gray;*/
+    box-shadow: 0 5px gray;
     transform: translateY(2px);
  }
 
-.DistrictSearch{
+/*-------------------------------------MIDDLE DETAIL--------------------------------*/
+
+.middle_detail {
+	/*display: flex;
+	text-align: center; */
+	border: 5px solid white;
+	position: relative;
 	width: 100%;
-	margin: 10px 0;
+	margin: 5% auto;
+}
+
+.indexState{
+	font-size: 1.75em;
 	text-align: center;
+}
+
+.middle_detail .up{
+	width: 90%;
+	margin: 2% auto;
+	/*border: 3px solid white;*/
+	display: flex;
+}
+
+.middle_detail .up p{
+	display: block;
+	font-size: 1.50em;
+	padding: 3px 22px;
+	border-radius: 10px;
+	margin: 3% 5%;
+}
+
+.indexStateTotalCases{
+	background: orange;
+}
+
+.indexStateRecovered{
+	background: green;
+}
+
+.middle_detail .down{
+	width: 90%;
+	margin: 2% auto;
+	/*border: 3px solid white;*/
+	display: flex;
+}
+
+.middle_detail .down p{
+	display: block;
+	font-size: 1.50em;
+	padding: 3px 22px;
+	border-radius: 10px;
+	margin: 3% 5%;
+}
+
+.indexStateTotalInfected{
+	background: blue;
+}
+
+.indexStateDeceased{
+	background: red;
+}
+
+/*------------------------------------DISTRICT SEARCH---------------------------------*/
+
+.DistrictSearch{
+	text-align: center;
+	border: 5px solid white;
+	position: relative;
+	width: 100%;
+	margin: 5% auto;
 }
 
 .DistrictSearch select{
 	background: none;
 	width: 40%;
-	font-size: 18px;
+	font-size: 1.4em;
 	margin: 12px 0;
-	padding: 6px;
-	/*border: none;*/
+	padding: 1.15%;
 	border-bottom: 2px solid white;
 	border-radius: 8px;
 	outline: none;
@@ -243,8 +301,8 @@ h1 {
 	cursor: pointer;
 	outline: none;
 /*	width: 25%;
-*/	margin: 12px 0 0 5px;
-	padding: 6px;
+*/	margin: 0 0 0 5%;
+	padding: 1.15%;
 	border: 2px solid white;
 	border-radius: 8px;
 	background: none;
@@ -260,32 +318,39 @@ h1 {
 
 .indexSearchBtn:active {
     background-color: orange;
-    /*box-shadow: 0 5px gray;*/
+    box-shadow: 0 5px gray;
     transform: translateY(2px);
  }
+
+ /*---------------------------------LOWER DETAIL-----------------------------*/
 
 .lower_detail {
 	/*display: flex;
 	text-align: center; */
-	margin: 3px 30px;
+	border: 5px solid white;
+	position: relative;
+	width: 100%;
+	margin: 5% auto;
 }
 
 .indexDistrict{
+	font-size: 1.75em;
 	text-align: center;
 }
 
 .lower_detail .up{
-	width: 100%;
-	margin: 10px 15px;
-/*	border: 5px solid white;
-*/	display: flex;
+	width: 90%;
+	margin: 2% auto;
+	/*border: 3px solid white;*/
+	display: flex;
 }
 
 .lower_detail .up p{
 	display: block;
+	font-size: 1.50em;
 	padding: 3px 22px;
 	border-radius: 10px;
-	margin: 5px 10px;
+	margin: 3% 5%;
 }
 
 .indexDistrictConfirmed{
@@ -297,18 +362,18 @@ h1 {
 }
 
 .lower_detail .down{
-	width: 100%;
-	margin: 10px 15px;
-/*	border: 5px solid white;
-*/	display: flex;
+	width: 90%;
+	margin: 2% auto;
+	/*border: 3px solid white;*/
+	display: flex;
 }
 
 .lower_detail .down p{
 	display: block;
+	font-size: 1.50em;
 	padding: 3px 22px;
 	border-radius: 10px;
-	margin: 5px 10px;
-
+	margin: 3% 5%;
 }
 
 .indexDistrictActive{
@@ -321,4 +386,96 @@ h1 {
 
 .indexDistrictErrorCase{
 	text-align: center;
+}
+
+/*---------------------------------------FOOTER---------------------------------------*/
+footer{
+	background: white;
+	position: fixed;
+	bottom: 0;
+	/*border: 2px solid white;*/
+}
+.footer-distributed{
+	background color: white;
+	/*box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;*/
+	width: 100%;
+	/*text-align: left;*/
+	justify-content: center;
+ 	display: flex;
+	/*padding: 1.40%;*/
+	padding: 13px;
+	/*margin-top: 80px;*/
+}
+.footer-distributed p{
+	font: bold 30px sans-serif;
+	color: black;
+	margin-right: 2%;
+}
+
+.fa {
+  padding: 1.2% 0.5%; 
+  margin: 0.1% 0.1%;
+  font-size: 30px;
+  width: 5%;
+  text-align: center;
+  text-decoration: none;
+  /*border-radius: 50%;*/
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+  margin-right: 0.5%;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+  margin-right: 0.5%;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+  margin-right: 0.5%;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+  margin-right: 0.5%;
+}
+
+/*------------------------------MEDIA QUERY------------------------------*/
+@media (max-width: 880px) {
+ 
+	.covid19-container{
+		width: 96%;
+		height: auto; 
+		left: 0%;
+		margin: 0 auto;
+	}
+
+	body{
+		font: 12px Helmet, Freesans, sans-serif;
+	}
+
+	
+
+	.footer-distributed {
+		text-align: center;
+		justify-content: center;
+		padding: 12px;
+	}
+
+	.footer-distributed p{
+		font: bold 16px sans-serif;
+		color: black;
+		margin-right: 2%;
+	}
 }
