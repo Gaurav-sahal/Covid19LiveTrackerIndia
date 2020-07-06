@@ -19,7 +19,7 @@ html {
 }
 
 body{
-	font: 16px Helmet, Freesans, sans-serif;
+	font: 14px Helmet, Freesans, sans-serif;
 }
 
 /*h1{
@@ -148,6 +148,7 @@ h1 {
 	font-size: 1em;
 	font-family: Courier New;
 	color: white;
+	font-weight: bold;
 	text-align: center;
 	position: relative;
 }
@@ -273,11 +274,17 @@ h1 {
 /*------------------------------------DISTRICT SEARCH---------------------------------*/
 
 .DistrictSearch{
-	text-align: center;
+	/*text-align: center;*/
 	border: 5px solid white;
 	position: relative;
 	width: 100%;
 	margin: 5% auto;
+}
+
+.DistrictSearch label{
+	padding: 0 3% 0 5%;
+	font-size: 1.50em;
+	color: white;
 }
 
 .DistrictSearch select{
@@ -455,22 +462,26 @@ footer{
 @media (max-width: 880px) {
  
 	.covid19-container{
-		width: 96%;
+		width: 98%;
 		height: auto; 
 		left: 0%;
 		margin: 0 auto;
 	}
 
 	body{
-		font: 12px Helmet, Freesans, sans-serif;
+		font: 11px Helmet, Freesans, sans-serif;
 	}
 
 	
 
 	.footer-distributed {
-		text-align: center;
+		/*text-align: center;
 		justify-content: center;
-		padding: 12px;
+		text-align: left;
+		float: left;
+		padding: 12px;*/
+		padding: 12px 5%;
+    	justify-content: left;
 	}
 
 	.footer-distributed p{
